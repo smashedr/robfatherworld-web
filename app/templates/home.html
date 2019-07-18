@@ -1,0 +1,50 @@
+{% extends "main.html" %}
+{% block home_active %}active{% endblock %}
+{% block title %}Home{% endblock %}
+{% load static %}
+{% load home_tags %}
+
+{% block head %}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.9/mediaelementplayer.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.9/mediaelement-and-player.js"></script>
+
+    <link href="{% static 'main/css/home.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <div class="row mt-2 mb-2">
+        <div class="col">
+            <div class="text-center">
+
+                <h1>Robfather World</h1>
+
+                <div style="margin: 10px auto; max-width: 480px;">
+                    <audio autoplay loop id="player" class="mejs__player" preload="auto"
+                           src="//imgg.site/f/20190717-211021238.mp3"
+                           style="max-width:100%; width:100%;" ></audio>
+                    <script type="text/javascript">
+                        var player = new MediaElementPlayer('player', {
+                            success: function(mediaElement, originalNode) {
+                                console.log("Player initialised");
+                                // mediaElement.play();
+                            }
+                        });
+                        // player.play();
+                    </script>
+                </div>
+
+                <a href="https://www.smwcentral.net/?p=section&a=details&id=20190" target="_blank">
+                    <img class="img-fluid" src="{% static 'images/game/title-screen.jpg' %}">
+                </a>
+
+                <h5>Website Coming Soon...</h5>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block tail %}
+    <script type="text/javascript" src="{% static 'main/js/home.js' %}"></script>
+{% endblock %}
