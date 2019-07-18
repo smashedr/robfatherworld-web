@@ -6,8 +6,6 @@
 
 {% block head %}
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.9/mediaelementplayer.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.9/mediaelement-and-player.js"></script>
-
     <link href="{% static 'main/css/home.css' %}" rel="stylesheet">
 {% endblock %}
 
@@ -19,25 +17,22 @@
                 <h1>Robfather World</h1>
 
                 <div style="margin: 10px auto; max-width: 480px;">
-                    <audio autoplay loop id="player" class="mejs__player" preload="auto"
-                           src="//imgg.site/f/20190717-211021238.mp3"
-                           style="max-width:100%; width:100%;" ></audio>
+                    <video autoplay loop muted id="video-player" class="mejs__player" preload="auto"
+                           src="//imgg.site/f/20190718-012839206.mp4"
+                           style="max-width:100%; width:100%;" ></video>
                     <script type="text/javascript">
-                        var player = new MediaElementPlayer('player', {
+                        var player = new MediaElementPlayer('video-player', {
                             success: function(mediaElement, originalNode) {
-                                console.log("Player initialised");
-                                // mediaElement.play();
+                                console.log("Video Player initialised");
                             }
                         });
-                        // player.play();
                     </script>
                 </div>
 
-                <a href="https://www.smwcentral.net/?p=section&a=details&id=20190" target="_blank">
-                    <img class="img-fluid" src="{% static 'images/game/title-screen.jpg' %}">
-                </a>
-
                 <h5>Website Coming Soon...</h5>
+
+                <a href="https://www.smwcentral.net/?p=section&a=details&id=20190"
+                   class="btn btn-primary" target="_blank">View at SMW Central</a>
 
             </div>
         </div>
@@ -46,5 +41,6 @@
 {% endblock %}
 
 {% block tail %}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.9/mediaelement-and-player.js"></script>
     <script type="text/javascript" src="{% static 'main/js/home.js' %}"></script>
 {% endblock %}
