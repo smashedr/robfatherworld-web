@@ -45,6 +45,24 @@
                     <li class="nav-item {% block home_active %}{% endblock %}">
                         <a class="nav-link" href="{% url 'home:index' %}">Home</a>
                     </li>
+
+                    <li class="nav-item {% block about_active %}{% endblock %}">
+                        <a class="nav-link" href="{% url 'home:about' %}">About</a>
+                    </li>
+
+                    <li class="nav-item {% block videos_active %}{% endblock %}">
+                        <a class="nav-link" href="{% url 'home:videos' %}">Videos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Hacks
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item {% block rfw1_active %}{% endblock %}" href="{% url 'home:rfw1' %}">Robfather World 1</a>
+                            <a class="dropdown-item {% block rfw2_active%}{% endblock %}" href="{% url 'home:rfw2' %}">Robfather World 2</a>
+                        </div>
+                    </li>
                 </ul>
 
                 {% if not request.user.is_authenticated %}
