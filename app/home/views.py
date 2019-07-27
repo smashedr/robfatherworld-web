@@ -22,8 +22,3 @@ def rfw1_view(request):
 def rfw2_view(request):
     #  View: /videos/
     return render(request, 'rfw2.html')
-
-
-def videos_view(request):
-    #  View: /videos/
-    return render(request, 'videos.html')
