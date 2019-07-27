@@ -16,9 +16,9 @@ def about_view(request):
 
 def rfw1_view(request):
     #  View: /videos/
-    return render(request, 'rfw1.html')
+    return render(request, 'rfw/rfw1.html')
 
 
 def rfw2_view(request):
     #  View: /videos/
-    return render(request, 'rfw2.html')
+    return render(request, 'rfw/rfw2.html')

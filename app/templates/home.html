@@ -6,33 +6,40 @@
 
 {% block head %}
     <link href="{% static 'main/css/home.css' %}" rel="stylesheet">
+
+{#    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/css/mdb.min.css" />#}
+{#    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/js/mdb.min.js"></script>#}
 {% endblock %}
 
 {% block body %}
     <div class="row my-2">
-        <div class="col-lg-6">
+        <div class="col-lg-6 mb-2">
             <div class="text-center">
                 <h3>Robfather World 1</h3>
                 <a href="{% url 'home:rfw1' %}">
                     <img class="img-fluid mx-auto" src="{% static 'images/game/title-screen.jpg' %}" />
                 </a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="https://dl.smwcentral.net/20190/Robfather_World_v1_1.zip" rel="noreferrer" class="btn btn-outline-info mx-1">Download</a>
+                <a href="{% url 'home:rfw1' %}" class="btn btn-outline-info mx-1">Read More</a>
             </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 mb-2">
             <div class="text-center">
                 <h3>Robfather World 2</h3>
                 <a href="{% url 'home:rfw2' %}">
                     <img class="img-fluid mx-auto" src="{% static 'images/game/title-screen.jpg' %}" />
                 </a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="https://dl.smwcentral.net/20190/Robfather_World_v1_1.zip" rel="noreferrer" class="btn btn-outline-info mx-1">Download</a>
+                <a href="{% url 'home:rfw2' %}" class="btn btn-outline-info mx-1">Read More</a>
             </div>
         </div>
         <div class="col-lg-12">
             <div class="text-center">
-                <h3>About Robfather World</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="{% url 'home:about' %}" class="btn btn-outline-info">Read More About Robfather World</a>
+                <h3>Meet the Creator</h3>
+                <p>SMW ROM hacks let me combine all of my passions into one. Seriously! Graphics, music, story, level design, and programming. I wanted to make video games ever since I was little. I'm incredibly thankful to smwcentral community, who has developed tools to make level creation so much easier. I also can't believe how nice everyone is in the SMW community. It's thanks to the players' feedback and support that turn my ideas into actual gameplay. I love all of you! Kaizo is the friends we meet along the way, as well as endless suffering and turmoil and... oh sorry I blacked out for a moment there. Anyway, I hope you have fun playing these hacks!</p>
+                <a href="{% url 'home:about' %}" class="btn btn-outline-info mx-1">Read More About Robfather World</a>
             </div>
         </div>
     </div>
