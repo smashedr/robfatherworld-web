@@ -1,6 +1,7 @@
 django<2.2
 django-debug-toolbar
 django-extensions
+requests-cache
 gunicorn
 mysqlclient
 requests

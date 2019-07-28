@@ -67,6 +67,8 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownVideos">
                             <a class="dropdown-item {% block tutorials_active %}{% endblock %}" href="{% url 'videos:tutorials' %}">Lunar Magic Tutorials</a>
                             <a class="dropdown-item {% block speedruns_active %}{% endblock %}" href="{% url 'videos:speedruns' %}">Robfather Speedruns</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item {% block livestreams_active %}{% endblock %}" href="{% url 'videos:livestreams' %}">Twitch Live Streams</a>
                         </div>
                     </li>
                 </ul>
