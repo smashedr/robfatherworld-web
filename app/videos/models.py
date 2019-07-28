@@ -7,12 +7,20 @@ logger = logging.getLogger('app')
 
 class Videos(models.Model):
     CATEGORY = [
-        ('tutorials', 'Tutorials'),
+        ('tutorials', 'Lunar Magic Tutorials'),
+        ('speedruns', 'Robfather Speedruns'),
     ]
-    category = models.CharField(max_length=255, choices=CATEGORY, default='tutorials')
-    title = models.CharField(max_length=255)
-    description = models.TextField()
-    video_id = models.CharField(max_length=255)
+    HELP_TEXT = {
+        'category': 'Which section the video will appear in.',
+        'title': 'Title of the video.',
+        'description': 'Description text about the video.',
+        'video_id': 'Video URL or ID from the YouTube share button.',
+    }
+
+    category = models.CharField(max_length=255, choices=CATEGORY, default='tutorials', help_text=HELP_TEXT['category'])
+    title = models.CharField(max_length=255, help_text=HELP_TEXT['title'])
+    description = models.TextField(help_text=HELP_TEXT['description'])
+    video_id = models.CharField(max_length=255, help_text=HELP_TEXT['video_id'])
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
 

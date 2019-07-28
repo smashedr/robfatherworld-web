@@ -1,0 +1,21 @@
+<div class="card border-light my-2">
+    <div class="card-body">
+
+        <div class="embed-responsive embed-responsive-16by9 float-left mr-2 mb-2" style="max-height: 261px; max-width: 464px;">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ video.video_id }}"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    frameborder="0" scrolling="no" allowfullscreen>
+            </iframe>
+        </div>
+
+        <h5 class="card-title">{{ video.title }}</h5>
+
+        <div class="card-text" style="min-width: 200px;">{{ video.description }}</div>
+
+        <div class="clearfix"></div>
+        <blockquote class="blockquote mb-0">
+            <footer class="blockquote-footer">Added <cite title="Source Title">{{ video.created_at }}</cite></footer>
+        </blockquote>
+
+    </div>
+</div>

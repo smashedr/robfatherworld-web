@@ -1,6 +1,6 @@
 {% extends "main.html" %}
-{% block tutorials_active %}active{% endblock %}
-{% block title %}Lunar Magic Tutorials{% endblock %}
+{% block speedruns_active %}active{% endblock %}
+{% block title %}Robfather Speedruns{% endblock %}
 {% load static %}
 {% load home_tags %}
 
@@ -12,10 +12,10 @@
         <div class="col">
 
             <div class="text-center">
-                <h3>Lunar Magic Tutorials</h3>
+                <h3>Robfather Speedruns</h3>
             </div>
 
-            <p class="lead">Lunar Magic tutorials will cover all of the basics in three parts; advanced usage of custom graphics, specific patching and ASM tutorials. </p>
+            <p class="lead">Some of the best and most interesting speedruns from the Robfather series by various Twitch streamers and speedrunners. </p>
 
             {% for video in videos %}
                 {% include 'videos/video.html' with video=video %}

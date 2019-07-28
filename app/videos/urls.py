@@ -5,6 +5,6 @@ from videos import views
 app_name = 'videos'
 
 urlpatterns = [
-    path('', views.index_view, name='index'),
     path('tutorials/', views.tutorials_view, name='tutorials'),
+    path('speedruns/', views.speedruns_view, name='speedruns'),
 ]
