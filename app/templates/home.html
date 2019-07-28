@@ -6,9 +6,6 @@
 
 {% block head %}
     <link href="{% static 'main/css/home.css' %}" rel="stylesheet">
-
-{#    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/css/mdb.min.css" />#}
-{#    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/js/mdb.min.js"></script>#}
 {% endblock %}
 
 {% block body %}
@@ -17,9 +14,9 @@
             <div class="text-center">
                 <h3>Robfather World 1</h3>
                 <a href="{% url 'home:rfw1' %}">
-                    <img class="img-fluid img-thumbnail my-1 mx-auto" src="{% static 'images/game/title-screen.jpg' %}" />
+                    <img class="img-fluid img-thumbnail my-1 mx-auto" src="{% static 'images/assets/rfw1/TitleScreen.jpg' %}" />
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Are you ready to dive into the world of Kaizo hacks, but you're intimidated by how hard they look? Robfather World is designed to be the second-half to Learn 2 Kaizo, focusing heavily on platforming instead of raw kaizo tricks. Robfather World allows you to execute tricks in a forgiving environment to give you the courage to move onto the first wave of kaizo hacks. After Robfather World, I recommend playing Quickie World 1, Quickie World 2, and Baby Kaizo World. </p>
                 <a href="https://dl.smwcentral.net/20190/Robfather_World_v1_1.zip" rel="noreferrer" class="btn btn-outline-info mx-1">Download</a>
                 <a href="{% url 'home:rfw1' %}" class="btn btn-outline-info mx-1">Read More</a>
             </div>
@@ -28,9 +25,9 @@
             <div class="text-center">
                 <h3>Robfather World 2</h3>
                 <a href="{% url 'home:rfw2' %}">
-                    <img class="img-fluid img-thumbnail my-1 mx-auto" src="{% static 'images/game/title-screen.jpg' %}" />
+                    <img class="img-fluid img-thumbnail my-1 mx-auto" src="{% static 'images/assets/rfw1/TitleScreen.jpg' %}" />
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>If you have already knocked out all of the "easy" kaizo hacks, you're probably ready to move onto the intermediate difficulty. Robfather World 2 has the goal of giving you the courage to take on hacks such as Akogare World, Korosu World, Ryu World, and more. Robfather World 2 is currently in development and has a goal release date of September 1st. </p>
                 <a href="https://dl.smwcentral.net/20190/Robfather_World_v1_1.zip" rel="noreferrer" class="btn btn-outline-info mx-1">Download</a>
                 <a href="{% url 'home:rfw2' %}" class="btn btn-outline-info mx-1">Read More</a>
             </div>
@@ -38,7 +35,8 @@
         <div class="col-lg-12">
             <div class="text-center">
                 <h3>Meet the Creator</h3>
-                <p>SMW ROM hacks let me combine all of my passions into one. Seriously! Graphics, music, story, level design, and programming. I wanted to make video games ever since I was little. I'm incredibly thankful to smwcentral community, who has developed tools to make level creation so much easier. I also can't believe how nice everyone is in the SMW community. It's thanks to the players' feedback and support that turn my ideas into actual gameplay. I love all of you! Kaizo is the friends we meet along the way, as well as endless suffering and turmoil and... oh sorry I blacked out for a moment there. Anyway, I hope you have fun playing these hacks!</p>
+                <img src="{% static 'images/assets/dan/cubeOhNo.png' %}" class="float-left mr-2 mb-2">
+                <p>SMW ROM hacks let me combine all of my passions into one. Seriously! Graphics, music, story, level design, and programming. I wanted to make video games ever since I was little. I'm incredibly thankful to smwcentral community, who has developed tools to make level creation so much easier. I also can't believe how nice everyone is in the SMW community. It's thanks to the players' feedback and support that turn my ideas into actual gameplay. I love all of you! Kaizo is the friends we meet along the way, as well as endless suffering and turmoil and... oh sorry I blacked out for a moment there. Anyway, I hope you have fun playing these hacks! </p>
                 <a href="{% url 'home:about' %}" class="btn btn-outline-info mx-1">Read More About Robfather World</a>
             </div>
         </div>

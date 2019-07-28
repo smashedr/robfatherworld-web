@@ -1,0 +1,49 @@
+<div class="card border-light my-2">
+    <div class="card-body">
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="embed-responsive embed-responsive-16by9 float-left mr-2 mb-2">
+                    <iframe
+                            class="embed-responsive-item"
+                            src="https://player.twitch.tv/?channel={{ stream.user_name }}&autoplay=false"
+                            height="261"
+                            width="464"
+                            frameborder="0"
+                            scrolling="no"
+                            allowfullscreen="true">
+                    </iframe>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+
+                <h5><a href="https://twitch.tv/{{ stream.user_name|lower }}" target="_blank" class="text-info">{{ stream.title }}</a></h5>
+                <table class="table table-sm">
+                    <tbody>
+                    <tr>
+                        <th scope="row">User</th>
+                        <td>{{ stream.user_name }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Viewers</th>
+                        <td>{{ stream.viewer_count }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Language</th>
+                        <td>{{ stream.language }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Twitch URL</th>
+                        <td><a href="https://twitch.tv/{{ stream.user_name|lower }}" target="_blank" class="text-info">
+                            https://twitch.tv/{{ stream.user_name|lower }}</a> </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,43 @@
+{% extends "main.html" %}
+{% block livestreams_active %}active{% endblock %}
+{% block title %}Twitch Live Streams{% endblock %}
+{% load static %}
+{% load home_tags %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+    <div class="row my-2">
+        <div class="col">
+
+            <div class="text-center">
+                <h3>Twitch Live Streams</h3>
+            </div>
+
+            <p class="lead">List of live Twitch streamers found playing Robfather World. </p>
+
+            {% if streams %}
+                <p>These streams and their content are property of the content creators and in no way affiliated with the Robfather World website. </p>
+
+                {% for stream in streams %}
+                    {% include 'videos/stream.html' with stream=stream %}
+                {% endfor %}
+
+            {% else %}
+                <div class="card border-light my-2">
+                    <div class="card-body">
+                        <p class="lead">No live streams for Robfather World found right now. </p>
+                        <p>You may check Twitch for up-to-date results at
+                            <a href="https://www.twitch.tv/search?term=robfather%20world" target="_blank">www.twitch.tv</a>. </p>
+                    </div>
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block tail %}
+{% endblock %}

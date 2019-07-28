@@ -9,11 +9,11 @@
 
 	<meta name="author" content="Shane"/>
 	<meta name="title" content="Robfather World"/>
-	<meta name="description" content="Robfather World Website - Coming Soon..."/>
+	<meta name="description" content="Robfather World is a Super Mario World Kaizo ROM hack series bridging the gaps between beginner and intermediate Kaizo difficulties, also known as Kaizo: Light."/>
 
 	<meta property="og:author" content="Shane">
 	<meta property="og:title" content="Robfather World">
-	<meta property="og:description" content="Robfather World Website - Coming Soon...">
+	<meta property="og:description" content="Robfather World is a Super Mario World Kaizo ROM hack series bridging the gaps between beginner and intermediate Kaizo difficulties, also known as Kaizo: Light.">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://{{ request.META.HTTP_HOST }}{% url 'home:index' %}">
     <meta property="og:image" content="https://{{ request.META.HTTP_HOST }}{% static 'images/logo.png' %}">
@@ -67,6 +67,8 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownVideos">
                             <a class="dropdown-item {% block tutorials_active %}{% endblock %}" href="{% url 'videos:tutorials' %}">Lunar Magic Tutorials</a>
                             <a class="dropdown-item {% block speedruns_active %}{% endblock %}" href="{% url 'videos:speedruns' %}">Robfather Speedruns</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item {% block livestreams_active %}{% endblock %}" href="{% url 'videos:livestreams' %}">Twitch Live Streams</a>
                         </div>
                     </li>
                 </ul>
