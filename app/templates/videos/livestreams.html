@@ -5,6 +5,9 @@
 {% load home_tags %}
 
 {% block head %}
+    {% if not streams %}
+        <meta http-equiv="refresh" content="180">
+    {% endif %}
 {% endblock %}
 
 {% block body %}
